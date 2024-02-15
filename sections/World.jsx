@@ -5,6 +5,7 @@ import { motion } from 'framer-motion';
 import styles from '../styles';
 import { TitleText, TypingText } from '../components';
 import { fadeIn, staggerContainer } from '../utils/motion';
+import { WorldCard } from '../components';
 
 const World = () => (
   <section className={`${styles.paddings} relative z-10`}>
@@ -43,6 +44,9 @@ const World = () => (
         <div className="absolute top-1/2 left-[45%] w-[70px] h-[70px] p-[6px] rounded-full bg-[#5D6680]">
           <img src="people-03.png" alt="people" className="w-full h-full" />
         </div>
+
+        <WorldCard img={"upside-down-card.png"} title={<>The Upside Down</>} position={"absolute bottom-20 left-28"}/>
+        <WorldCard img={"hawkins-lab-card.png"} title={<>The Hawkins Lab</>} position={"absolute top-10 right-28"}/>
       </motion.div>
     </motion.div>
   </section>
